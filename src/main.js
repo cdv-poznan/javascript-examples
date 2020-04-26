@@ -1,10 +1,12 @@
-import $ from 'jquery';
 import 'bootstrap';
-import { enableRouting } from './routing';
+import $ from 'jquery';
 import { enableCases } from './controllers/cases';
+import { enableTodo } from './controllers/todo';
+import { enableRouting } from './routing';
 
 async function main() {
   enableCases();
+  enableTodo();
 
   enableRouting();
 }

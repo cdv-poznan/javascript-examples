@@ -19,7 +19,7 @@ function applyCase() {
   }
 
   if (text && targetCase) {
-    $('.alert').hide();
+    $('#cases .alert').hide();
     const $target = $('#case-target-input');
     switch (targetCase) {
       case 'camelCase':
@@ -46,7 +46,7 @@ function applyCase() {
 }
 
 export async function enableCases() {
-  $('.alert').hide();
+  $('#cases .alert').hide();
   $('#case-apply-btn').click(applyCase);
 
   const clipboard = new ClipboardJS('#case-copy-btn', {

@@ -36,7 +36,31 @@
         </div>
       </div>
       <div class="container view" id="todo">
-        <h2>Todo</h2>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Todo</h2>
+            <ul class="list-group" id="todo-list"></ul>
+            <div class="alert alert-secondary" role="alert" id="todo-empty-alert">
+              You have nothing to do.
+            </div>
+            <form id="todo-form" class="mt-4">
+              <div class="input-group">
+                <input class="form-control" name="todo-input" id="todo-input" placeholder="New todo text…" />
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-outline-primary">
+                    Add new todo
+                  </button>
+                  <button type="reset" class="btn btn-outline-secondary">
+                    Clear todo text
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div class="alert alert-danger mt-4 mb-0" role="alert" id="todo-text-alert">
+              You cannot add empty todo!
+            </div>
+          </div>
+        </div>
       </div>
       <div class="container view" id="cases">
         <div class="card">
