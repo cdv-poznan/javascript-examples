@@ -41,7 +41,13 @@
     "webpack-dev-server": "^3.10.3",
     "webpackbar": "^4.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
+    "popper.js": "^1.16.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Juszczak/cdv-project-starter.git"

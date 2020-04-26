@@ -24,6 +24,7 @@
     {
       "files": "*.html",
       "options": {
+        "printWidth": 140,
         "parser": "html",
         "htmlWhitespaceSensitivity": "css"
       }

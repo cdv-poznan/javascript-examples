@@ -6,6 +6,111 @@
     <title>CDV</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="bg-dark">
+      <nav class="navbar navbar-dark sticky-top navbar-expand container">
+        <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#cases">Cases</a>
+            <a class="nav-item nav-link" href="#todo">Todo</a>
+            <a class="nav-item nav-link" href="#voice">Voice</a>
+            <a class="nav-item nav-link" href="#exchange">Exchange</a>
+            <a class="nav-item nav-link" href="#notify">Notify</a>
+            <a class="nav-item nav-link" href="#chart"> Chart</a>
+            <a class="nav-item nav-link" href="#map">Map</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container pt-3" id="app">
+      <div class="container view" id="home">
+        <div class="jumbotron">
+          <div class="container">
+            <h1 class="display-1">Hello!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container view" id="todo">
+        <h2>Todo</h2>
+      </div>
+      <div class="container view" id="cases">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Cases</h2>
+            <div class="row pt-3">
+              <div class="col">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-upload"></i></span>
+                  </div>
+                  <input class="form-control" type="text" id="case-source-input" placeholder="Source text…" />
+                  <select class="custom-select" id="case-target-select">
+                    <option selected disabled>Select target case…</option>
+                    <option value="camelCase">camelCase</option>
+                    <option value="kebabCase">kebab-case</option>
+                    <option value="lowerCase">lower case</option>
+                    <option value="snakeCase">snake_case</option>
+                    <option value="startCase">Start Case</option>
+                    <option value="upperCase">UPPER CASE</option>
+                  </select>
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-dark" type="button" id="case-apply-btn">Apply!</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-download"></i></span>
+                  </div>
+                  <input class="form-control" type="text" id="case-target-input" readonly />
+                  <div class="input-group-append" id="case-copy-btn">
+                    <button class="btn btn-outline-secondary" type="button"><i class="fas fa-copy"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="alert alert-danger mb-0 mt-3" role="alert" id="case-alert-danger">
+              Select target case!
+              <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="alert alert-warning mb-0 mt-3" role="alert" id="case-alert-warning">
+              Empty source phrase!
+              <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="alert alert-success mb-0 mt-3" role="alert" id="case-aler-success">
+              Copied to clipboard!
+              <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container view" id="voice">
+        <h2>Voice</h2>
+      </div>
+      <div class="container view" id="exchange">
+        <h2>Exchange</h2>
+      </div>
+      <div class="container view" id="notify">
+        <h2>Notify</h2>
+      </div>
+      <div class="container view" id="chart">
+        <h2>Chart</h2>
+      </div>
+      <div class="container view" id="map">
+        <h2>Map</h2>
+      </div>
+    </div>
   </body>
 </html>
