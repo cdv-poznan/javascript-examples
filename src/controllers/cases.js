@@ -1,5 +1,6 @@
+import ClipboardJS from 'clipboard';
 import $ from 'jquery';
-import { camelCase, kebabCase, lowerCase, snakeCase, startCase, upperCase } from 'lodash';
+import { camelCase, first, kebabCase, lowerCase, snakeCase, startCase, upperCase } from 'lodash';
 
 function applyCase() {
   const text = $('#case-source-input').val();
@@ -47,4 +48,12 @@ function applyCase() {
 export async function enableCases() {
   $('.alert').hide();
   $('#case-apply-btn').click(applyCase);
+
+  const clipboard = new ClipboardJS('#case-copy-btn', {
+    target: () => first($('#case-target-input')),
+  });
+
+  clipboard.on('success', () => {
+    $('#case-aler-success').show();
+  });
 }
