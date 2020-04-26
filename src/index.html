@@ -163,7 +163,36 @@
       </div>
 
       <div class="container view" id="exchange">
-        <h2>Exchange</h2>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Exchange</h2>
+            <div class="row">
+              <div class="col">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">From</span>
+                  </div>
+                  <select class="custom-select" id="source-currency"> </select>
+                  <input class="form-control" id="source-value" type="number" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">To</span>
+                  </div>
+                  <select class="custom-select" id="target-currency"> </select>
+                  <input class="form-control" id="target-value" type="number" readonly />
+                </div>
+              </div>
+            </div>
+        <div class="input-group mt-3">
+          <button id="convert" type="button" class="btn btn-success">
+            Convert
+          </button>
+        </div>
+          </div>
+        </div>
       </div>
       <div class="container view" id="notify">
         <h2>Notify</h2>
