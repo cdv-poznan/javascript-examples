@@ -22,7 +22,6 @@
             <a class="nav-item nav-link" href="#exchange">Exchange</a>
             <a class="nav-item nav-link" href="#notify">Notify</a>
             <a class="nav-item nav-link" href="#chart"> Chart</a>
-            <a class="nav-item nav-link" href="#map">Map</a>
           </div>
         </div>
       </nav>
@@ -218,21 +217,73 @@
                   <button class="btn btn-outline-dark" id="notify-btn">Notify</button>
                 </div>
               </div>
-            <div class="alert alert-danger mb-0 mt-3" role="alert" id="notify-alert">
-              Notification title is required!
-              <button type="button" class="close" data-dismiss="alert">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
+              <div class="alert alert-danger mb-0 mt-3" role="alert" id="notify-alert">
+                Notification title is required!
+                <button type="button" class="close" data-dismiss="alert">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="container view" id="chart">
-        <h2>Chart</h2>
-      </div>
-      <div class="container view" id="map">
-        <h2>Map</h2>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Chart</h2>
+            <div class="row mb-3">
+              <div class="col">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-calendar-alt"></i>
+                    </span>
+                  </div>
+                  <input type="date" class="form-control chart-date" id="chart-from-date-input" value="2020-03-01" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fas fa-calendar-alt"></i>
+                    </span>
+                  </div>
+                  <input type="date" class="form-control chart-date" id="chart-to-date-input" />
+                </div>
+              </div>
+            </div>
+            <canvas id="chart-canvas"></canvas>
+            <div class="mt-3">
+              <div class="row">
+                <div class="col">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Poland</span>
+                    </div>
+                    <input type="color" class="form-control" id="chart-poland-color" value="#28a745" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Germany</span>
+                    </div>
+                    <input type="color" class="form-control" id="chart-germany-color" value="#dc3545" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Italy</span>
+                    </div>
+                    <input type="color" class="form-control" id="chart-italy-color" value="#ffc107" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
