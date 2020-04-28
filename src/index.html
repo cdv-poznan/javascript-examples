@@ -186,16 +186,47 @@
                 </div>
               </div>
             </div>
-        <div class="input-group mt-3">
-          <button id="convert" type="button" class="btn btn-success">
-            Convert
-          </button>
-        </div>
+            <div class="input-group mt-3">
+              <button id="convert" type="button" class="btn btn-success">
+                Convert
+              </button>
+            </div>
           </div>
         </div>
       </div>
       <div class="container view" id="notify">
-        <h2>Notify</h2>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Notify</h2>
+            <div class="mt-3">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-exclamation-circle"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" id="notify-title-input" placeholder="Notification title" value="Hello!" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="notify-body-input"
+                  placeholder="Notification body"
+                  value="This is custom notification."
+                />
+                <input type="number" class="form-control" id="notify-timeout-input" placeholder="Notification timeout" value="4000" />
+                <div class="input-group-append">
+                  <button class="btn btn-outline-dark" id="notify-btn">Notify</button>
+                </div>
+              </div>
+            <div class="alert alert-danger mb-0 mt-3" role="alert" id="notify-alert">
+              Notification title is required!
+              <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="container view" id="chart">
         <h2>Chart</h2>
