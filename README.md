@@ -66,3 +66,23 @@ git fetch upstream
 
 git rebase upstream/master
 ```
+
+
+## Zależności
+
+### Deweloperskie
+
+* [Babel](https://babeljs.io)
+* [ESLint](https://eslint.org)
+* [Prettier](https://prettier.io)
+* [webpack](https://webpack.js.org/)
+
+### Produkcyjne
+
+* [FontAwesome](https://fontawesome.com)
+* [Bootstrap](https://getbootstrap.com)
+* [Chart.js](https://www.chartjs.org)
+* [jQuery](https://jquery.com)
+* [Lodash](https://lodash.com)
+* [Popper.js](https://popper.js.org)
+* [Push.js](https://pushjs.org)
