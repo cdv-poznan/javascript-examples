@@ -1,6 +1,6 @@
 {
-  "name": "javascript-project-starter",
-  "description": "Starter for JavaScript project",
+  "name": "javascript-examples",
+  "description": "JavaScript examples for students",
   "version": "1.0.0",
   "scripts": {
     "start": "webpack-dev-server",
@@ -54,11 +54,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Juszczak/cdv-project-starter.git"
+    "url": "git+git@github.com:Juszczak/javascript-examples.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Juszczak/cdv-project-starter/issues"
+    "url": "https://github.com/Juszczak/javascript-examples/issues"
   },
-  "homepage": "https://github.com/Juszczak/cdv-project-starter#readme"
+  "homepage": "https://github.com/Juszczak/javascript-examples#readme"
 }
