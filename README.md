@@ -86,3 +86,12 @@ git rebase upstream/master
 * [Lodash](https://lodash.com)
 * [Popper.js](https://popper.js.org)
 * [Push.js](https://pushjs.org)
+
+
+## Przykładowe API
+
+* [COVID-19 API](https://covid19api.com)
+* [ExchangeRate-API](https://www.exchangerate-api.com)
+* [REQ|RES](https://reqres.in)
+* [SWAPI](https://swapi.dev)
+* [PokéAPI](https://pokeapi.co)
