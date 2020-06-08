@@ -32,4 +32,12 @@ export async function enableNotify() {
       showAlert();
     }
   });
+
+  window.addEventListener('hashchange', () => {
+    const { hash } = window.location;
+    const [route, playerId] = hash.split('/');
+    if (route === '#notify' && playerId) {
+      console.log('player ID', playerId);
+    }
+  });
 }
